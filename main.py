@@ -1,11 +1,14 @@
-from random import randint
 # creating of 2 empty arrays
-array_with_numbers = []
-array_with_unique_numbers = []
+class MyClass(object):
+    def __init__(self, number):
+        self.number = number
 
-# filling in the array_with_numbers
+
+array_with_numbers = []
 for i in range(100):
-    array_with_numbers.append(randint(1, 5))
+    u = int(input())
+    array_with_numbers.append(MyClass(u).number)
+array_with_unique_numbers = []
 print(*array_with_numbers)
 
 
